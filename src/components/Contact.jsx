@@ -16,27 +16,22 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
     emailjs
       .send(
-        "service_r0jcplm",
-        "template_1t76uxq",
+        "service_4mwc9je",
+        "template_gvogz3y",
         {
-          form_name: form.name,
-          to_name: "Liron",
+          from_name: form.name,
+          to_name: "Ujjwal",
           from_email: form.email,
-          to_email: "contact@mail.com",
+          to_email: "ujjwal01singh29@gmail.com",
           message: form.message,
         },
-        "Jqq9AvwIuSjoMiA5c"
+        "Szlh-znp4y--50dEX"
       )
       .then(
         () => {
@@ -51,8 +46,6 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-
-          console.log(error);
           alert("Something went wrong.");
         }
       );
@@ -80,7 +73,9 @@ const Contact = () => {
               type="text"
               name="name"
               value={form.name}
-              onChange={handleChange}
+              onChange={(e) => {
+                setForm({ ...form, name: e.target.value });
+              }}
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -91,7 +86,9 @@ const Contact = () => {
               type="email"
               name="email"
               value={form.email}
-              onChange={handleChange}
+              onChange={(e) => {
+                setForm({ ...form, email: e.target.value });
+              }}
               placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -102,7 +99,9 @@ const Contact = () => {
               rows={7}
               name="message"
               value={form.message}
-              onChange={handleChange}
+              onChange={(e) => {
+                setForm({ ...form, message: e.target.value });
+              }}
               placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />

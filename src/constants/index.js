@@ -42,20 +42,28 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Python",
+    icon: "/python.svg",
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Pandas",
+    icon: "/pandas.jpg",
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Numpy",
+    icon: "/file-type-numpy.svg",
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Matplotlib",
+    icon: "/matplotlib.png",
+  },
+  {
+    title: "Seaborn",
+    icon: "/seaborn.png",
+  },
+  {
+    title: "Scikit Learn",
+    icon: "/scikit.png",
   },
 ];
 
@@ -198,67 +206,66 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "Outliers",
+    description: "Removed Outlier using Z-Score and Standard Deviation",
     tags: [
       {
-        name: "react",
+        name: "pandas",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "python",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "numpy",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: "/outlier_remover.png",
+    source_code_link: "https://github.com/UjjwalSingh29/outlier",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "House Pricing",
+    description: "Predicted house pricing using Linear regression",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "pandas",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "seaborn",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: "/house-pricing.png",
+    source_code_link:
+      "https://github.com/UjjwalSingh29/house_pricing/blob/main/house-price-using-linear-regression.ipynb",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "Decision Tree",
+    description: "Used Decision Tree and Random Forest on a Loan Data",
     tags: [
       {
-        name: "nextjs",
+        name: "pandas",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "numpy",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "python",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: "/Decision-Tree.png",
+    source_code_link:
+      "https://github.com/UjjwalSingh29/Decision_Tree/blob/main/Decision%20Trees%20and%20Random%20Forest%20Project%20-%20Solutions%20(1)-checkpoint.ipynb",
   },
 ];
 
